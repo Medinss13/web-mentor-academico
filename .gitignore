@@ -1,0 +1,12 @@
+# Fotos originales (pesadas, no necesarias para la web)
+Fotos/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
