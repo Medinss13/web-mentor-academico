@@ -2,7 +2,7 @@
 // MODO MANTENIMIENTO
 // Cambia a false para desactivar la pantalla
 // ============================================
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 if (MAINTENANCE_MODE) {
   document.addEventListener('DOMContentLoaded', function () {
