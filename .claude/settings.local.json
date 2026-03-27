@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mkdir -p carrera programa asesorias contacto)",
+      "Bash(cp carrera.html carrera/index.html)",
+      "Bash(cp programa.html programa/index.html)",
+      "Bash(cp asesorias.html asesorias/index.html)",
+      "Bash(cp contacto.html contacto/index.html)"
+    ]
+  }
+}
