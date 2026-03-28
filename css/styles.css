@@ -1142,7 +1142,7 @@ p {
 }
 
 .footer__links a {
-  color: #aaa;
+  color: #ccc;
   font-size: 0.95rem;
   transition: color var(--transition);
 }
@@ -1161,6 +1161,7 @@ p {
   height: 40px;
   border-radius: 8px;
   background-color: var(--color-dark);
+  color: #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
