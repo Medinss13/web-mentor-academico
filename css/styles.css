@@ -1071,6 +1071,7 @@ p {
   height: 48px;
   border-radius: 12px;
   background-color: var(--color-dark);
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1080,6 +1081,7 @@ p {
 
 .social-link:hover {
   background-color: var(--color-primary);
+  color: var(--color-white);
   transform: translateY(-3px);
 }
 
@@ -1161,7 +1163,7 @@ p {
   height: 40px;
   border-radius: 8px;
   background-color: var(--color-dark);
-  color: #ccc;
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
