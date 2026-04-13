@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Antes de nuestra llamada | Alejandro Medina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #FFA500;
+      --color-primary-dark: #E08E00;
+      --color-black: #1A1A1A;
+      --color-dark: #2D2D2D;
+      --color-gray: #6B6B6B;
+      --color-light: #F5F5F0;
+      --color-white: #FFFFFF;
+      --font-main: 'Montserrat', sans-serif;
+    }
+
+    *, *::before, *::after {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--color-black);
+      color: var(--color-white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* --- Header --- */
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .page-header__logo {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-gray);
+      margin-bottom: 32px;
+    }
+
+    .page-header__tag {
+      display: inline-block;
+      background: rgba(255, 165, 0, 0.12);
+      color: var(--color-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+    }
+
+    .page-header__title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--color-white);
+      margin-bottom: 16px;
+    }
+
+    .page-header__title span {
+      color: var(--color-primary);
+    }
+
+    .page-header__subtitle {
+      font-size: 1.05rem;
+      color: var(--color-gray);
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* --- Video --- */
+    .video-wrapper {
+      margin-bottom: 40px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .wistia_responsive_padding {
+      padding: 56.25% 0 0 0;
+      position: relative;
+    }
+
+    .wistia_responsive_wrapper {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .wistia_responsive_wrapper iframe {
+      border-radius: 12px;
+    }
+
+    /* --- Info box --- */
+    .info-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .info-box__title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-white);
+      margin-bottom: 12px;
+    }
+
+    .info-box__text {
+      font-size: 0.95rem;
+      color: var(--color-gray);
+      line-height: 1.6;
+    }
+
+    .info-box__steps {
+      display: flex;
+      gap: 24px;
+      margin-top: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .info-box__step {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .info-box__step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-black);
+      font-weight: 800;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* --- Footer --- */
+    .page-footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* --- Fade in animation --- */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .fade-in:nth-child(2) { animation-delay: 0.15s; }
+    .fade-in:nth-child(3) { animation-delay: 0.3s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --- Mobile --- */
+    @media (max-width: 600px) {
+      body { padding: 24px 16px; }
+      .info-box { padding: 24px 20px; }
+      .info-box__steps { flex-direction: column; align-items: center; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="page-header fade-in">
+      <span class="page-header__tag">Antes de nuestra llamada</span>
+      <h1 class="page-header__title">Mira este vídeo <span>antes de que hablemos</span></h1>
+      <p class="page-header__subtitle">En 10 minutos te explico cómo funciona el programa, qué incluye y la inversión. Así en la llamada nos centramos directamente en tu caso.</p>
+    </div>
+
+    <!-- Video -->
+    <div class="video-wrapper fade-in">
+      <div class="wistia_responsive_padding">
+        <div class="wistia_responsive_wrapper">
+          <iframe src="https://fast.wistia.net/embed/iframe/TU_VIDEO_ID?web_component=true&seo=false"
+                  title="Programa de Mentoría - Alejandro Medina"
+                  allow="autoplay; fullscreen"
+                  allowtransparency="true"
+                  frameborder="0"
+                  scrolling="no"
+                  class="wistia_embed"
+                  name="wistia_embed"
+                  width="100%"
+                  height="100%">
+          </iframe>
+        </div>
+      </div>
+      <script src="https://fast.wistia.net/player.js" async></script>
+    </div>
+
+    <!-- Info box -->
+    <div class="info-box fade-in">
+      <h3 class="info-box__title">¿Qué haremos en la llamada?</h3>
+      <p class="info-box__text">En la llamada hablaremos directamente de tu investigación y de si el programa encaja contigo.</p>
+      <div class="info-box__steps">
+        <div class="info-box__step">
+          <span class="info-box__step-num">1</span>
+          Me cuentas tu proyecto
+        </div>
+        <div class="info-box__step">
+          <span class="info-box__step-num">2</span>
+          Vemos si encajas
+        </div>
+        <div class="info-box__step">
+          <span class="info-box__step-num">3</span>
+          Decidimos juntos
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="page-footer">
+      Alejandro Medina Sandín · Contenido privado y confidencial
+    </div>
+
+  </div>
+
+</body>
+</html>
