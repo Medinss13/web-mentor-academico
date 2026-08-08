@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/maintenance.js?v=3"></script>
+  <title>Curso de Revisión Sistemática de la Literatura | Alejandro Medina</title>
+  <meta name="description" content="Aprende a hacer tu revisión sistemática de la literatura paso a paso: del tema en blanco al artículo listo para enviar a revista. Método PRISMA, PICO(T), Zotero y plantillas incluidas.">
+  <meta name="keywords" content="curso revisión sistemática, revisión sistemática de la literatura, PRISMA, PICO, publicar artículo académico, doctorado">
+
+  <meta property="og:title" content="Curso de Revisión Sistemática de la Literatura | Alejandro Medina">
+  <meta property="og:description" content="El camino más rápido hacia tu primera publicación académica. Método paso a paso con PRISMA, PICO(T) y Zotero.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="navbar__logo">Alejandro <span>Medina</span></a>
+      <ul class="navbar__menu">
+        <li><a href="/inicio/" class="navbar__link">Inicio</a></li>
+        <li><a href="/carrera/" class="navbar__link">Carrera Académica</a></li>
+        <li class="navbar__dropdown">
+          <a class="navbar__link active" aria-haspopup="true">Asesoramiento<span class="navbar__dropdown-chevron">▼</span></a>
+          <ul class="navbar__dropdown-menu">
+            <li><a href="/">Programa Tesis 1:1</a></li>
+            <li><a href="/asesorias/">Asesoría Individual</a></li>
+            <li><a href="/curso-revision-sistematica/">Curso Revisión Sistemática</a></li>
+          </ul>
+        </li>
+        <li><a href="/contacto/" class="navbar__link">Contacto</a></li>
+      </ul>
+      <button class="navbar__hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay">
+    <button class="mobile-overlay__close" aria-label="Cerrar menú">&times;</button>
+    <a href="/inicio/">Inicio</a>
+    <a href="/carrera/">Carrera Académica</a>
+    <a href="/">Programa Tesis 1:1</a>
+    <a href="/asesorias/">Asesoría Individual</a>
+    <a href="/curso-revision-sistematica/">Curso Revisión Sistemática</a>
+    <a href="/contacto/">Contacto</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" style="min-height: auto; padding: 160px 0 100px;">
+    <div class="container">
+      <div class="hero__content" style="max-width: 800px;">
+        <span class="hero__tag">Curso Online</span>
+        <h1 class="hero__title">El camino más rápido hacia tu <span>primera publicación</span> académica</h1>
+        <p class="hero__subtitle">Aprende a hacer tu revisión sistemática de la literatura de principio a fin: del tema en blanco al artículo listo para enviar a revista. Con el mismo método paso a paso que uso con mis mentorados 1:1.</p>
+        <div style="margin-top: 36px;">
+          <a href="https://buy.stripe.com/8x2dR9eFz8hc2xocMHeIw0i" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 44px;" target="_blank" rel="noopener">Empezar ahora — 697€</a>
+          <p style="margin-top: 16px; font-size: 0.9rem; color: #888;">Pago único · Acceso inmediato · Pago seguro con Stripe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGITACIÓN ===== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="reveal">
+          <h2 style="margin-bottom: 32px;">¿Te suena familiar?</h2>
+          <div style="display: grid; gap: 20px;">
+            <div style="display: flex; gap: 16px; align-items: start;">
+              <span style="color: var(--color-accent); font-size: 1.3rem; flex-shrink: 0;">✕</span>
+              <p style="color: var(--color-black); font-size: 1.05rem;">Necesitas publicar — por el depósito de la tesis, una beca o la acreditación — y no sabes por dónde empezar.</p>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: start;">
+              <span style="color: var(--color-accent); font-size: 1.3rem; flex-shrink: 0;">✕</span>
+              <p style="color: var(--color-black); font-size: 1.05rem;">Abres Scopus o PubMed, pruebas palabras al azar y te salen 4.000 resultados. O 12. Y no sabes cuál de las dos cosas es peor.</p>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: start;">
+              <span style="color: var(--color-accent); font-size: 1.3rem; flex-shrink: 0;">✕</span>
+              <p style="color: var(--color-black); font-size: 1.05rem;">Llevas meses "leyendo papers" sin sistema: guardas PDFs que nunca vuelves a abrir y no avanzas hacia nada concreto.</p>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: start;">
+              <span style="color: var(--color-accent); font-size: 1.3rem; flex-shrink: 0;">✕</span>
+              <p style="color: var(--color-black); font-size: 1.05rem;">Tu director te dice "haz una revisión de la literatura", pero nadie te ha enseñado a hacer una de verdad: con PRISMA, criterios documentados y una búsqueda replicable.</p>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: start;">
+              <span style="color: var(--color-accent); font-size: 1.3rem; flex-shrink: 0;">✕</span>
+              <p style="color: var(--color-black); font-size: 1.05rem;">Te da miedo enviar el artículo y que un revisor lo tumbe por una búsqueda mal hecha o por haberte dejado media literatura fuera.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUCIÓN ===== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
+        <div class="accent-line" style="margin-bottom: 24px;"></div>
+        <h2>La revisión sistemática es la vía más rápida para publicar</h2>
+        <p style="font-size: 1.15rem; margin-top: 20px;">No necesitas recoger datos, pasar cuestionarios ni dominar un software estadístico. Necesitas un método riguroso y replicable. Este curso te lleva de la mano por los 4 pasos exactos — el mismo proceso que sigo con mis mentorados 1:1 — hasta tener tu revisión lista para enviar a revista.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EL MÉTODO EN 4 PASOS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="accent-line"></div>
+        <h2>El método, paso a paso</h2>
+        <p>25 lecciones en vídeo y texto, organizadas en 4 pasos secuenciales. Grabo mi pantalla haciendo una revisión real, para que tú repliques cada paso en la tuya.</p>
+      </div>
+
+      <div class="faq-list reveal" style="max-width: 800px; margin: 0 auto;">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Paso 1 — Define un buen tema de investigación
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Los 3 pilares de un tema publicable (pasión, factibilidad y debate) y cómo situarte en su intersección. El modelo PICO(T) para convertir un tema vago en una pregunta de investigación precisa. Y cómo encontrar tu artículo raíz: el punto de referencia que te evita duplicar trabajo y te descubre las brechas de la literatura que tu revisión va a llenar.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Paso 2 — Construye tu búsqueda como un profesional
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>De tu PICO a las palabras clave, y de ahí a todas sus variantes (minando los métodos de revisiones ya publicadas). Cadenas de búsqueda con lógica booleana en PubMed y Scopus: comillas, campos de búsqueda, truncamientos. Y el control de calidad que casi nadie hace: detectar los errores tipo I y tipo II de tu búsqueda para no ahogarte en ruido ni dejarte fuera los artículos que un revisor sí conoce.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Paso 3 — Criba con PRISMA y extrae tus datos
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>El diagrama PRISMA explicado casilla a casilla, para que tu proceso sea 100% replicable. Cómo definir criterios de inclusión y exclusión coherentes con tu PICO. Y el flujo completo en Zotero: exportar desde la base de datos, eliminar duplicados, conseguir todos los PDFs de golpe y hacer el screening por carpetas. Cierras el paso con tu matriz de extracción de datos en Google Sheets (plantilla incluida).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            Paso 4 — Escribe y publica tu artículo
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Cómo escribir cada sección con ejemplos de redacción reales: métodos reproducibles alineados con tu PRISMA, resultados que cuentan la historia de tus hallazgos, y la introducción y conclusión que se escriben al final. Incluye la estructura del abstract — la parte que el 90% de la gente leerá — con dos formatos según la revista.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="max-width: 800px; margin: 50px auto 0; text-align: center;" class="reveal">
+        <a href="https://buy.stripe.com/8x2dR9eFz8hc2xocMHeIw0i" class="btn btn-accent" style="padding: 16px 40px;" target="_blank" rel="noopener">Quiero empezar mi revisión</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUÉ INCLUYE ===== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="accent-line"></div>
+        <h2>Qué incluye el curso</h2>
+        <p>Todo lo que necesitas para hacer tu revisión de principio a fin.</p>
+      </div>
+
+      <div class="includes-grid">
+        <div class="include-card reveal">
+          <div class="include-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h4 class="include-card__title">Curso completo en vídeo</h4>
+          <p class="include-card__text">Casi 3 horas de vídeo donde me ves hacer una revisión real en pantalla: PubMed, Scopus, Zotero y Google Sheets. Sin teoría hueca: replicas lo que ves.</p>
+        </div>
+        <div class="include-card reveal">
+          <div class="include-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h4 class="include-card__title">Plantillas y ejercicios</h4>
+          <p class="include-card__text">Matriz de extracción de datos en Google Sheets, plantilla del diagrama PRISMA, ejemplos de redacción de cada sección y 6 ejercicios prácticos para aplicar cada paso a TU revisión.</p>
+        </div>
+        <div class="include-card reveal">
+          <div class="include-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4 class="include-card__title">Comunidad privada</h4>
+          <p class="include-card__text">Acceso a la Escuela de Investigación en Skool: comparte tu avance, pregunta tus dudas y trabaja rodeado de otros investigadores que están haciendo su revisión.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PARA QUIÉN ES ===== -->
+  <section class="section section--cream">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;" class="reveal">
+        <div class="section-header">
+          <div class="accent-line"></div>
+          <h2>¿Es este curso para ti?</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+          <div>
+            <h4 style="color: var(--color-primary); margin-bottom: 20px; font-size: 1.1rem;">✓ Esto es para ti si...</h4>
+            <ul style="display: grid; gap: 14px;">
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-black);"><span style="color: var(--color-primary); flex-shrink: 0;">✓</span> Eres doctorando o investigador y necesitas publicar tu primer artículo</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-black);"><span style="color: var(--color-primary); flex-shrink: 0;">✓</span> Estás haciendo (o vas a hacer) una revisión de la literatura para tu tesis o TFM</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-black);"><span style="color: var(--color-primary); flex-shrink: 0;">✓</span> Quieres un proceso replicable que resista a los revisores, no improvisación</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-black);"><span style="color: var(--color-primary); flex-shrink: 0;">✓</span> Prefieres aprender viendo el proceso real en pantalla, a tu ritmo</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: var(--color-gray); margin-bottom: 20px; font-size: 1.1rem;">✕ No es para ti si...</h4>
+            <ul style="display: grid; gap: 14px;">
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-gray);"><span style="flex-shrink: 0;">✕</span> Buscas que alguien haga la revisión por ti</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-gray);"><span style="flex-shrink: 0;">✕</span> Quieres un atajo mágico sin dedicarle horas de trabajo real</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-gray);"><span style="flex-shrink: 0;">✕</span> Ya dominas PRISMA y publicas revisiones con regularidad</li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem; color: var(--color-gray);"><span style="flex-shrink: 0;">✕</span><span>Necesitas acompañamiento individual — para eso está mi <a href="/" style="color: var(--color-accent);">mentoría 1:1</a></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉN ENSEÑA ===== -->
+  <section class="section section--dark">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
+        <div class="accent-line" style="margin-bottom: 24px;"></div>
+        <h2>Quién te lo enseña</h2>
+        <p style="font-size: 1.1rem; margin-top: 20px;">Soy <strong style="color: var(--color-white);">Alejandro Medina Sandín</strong>, investigador en Economía por la Universidad de Verona. He presentado mi investigación en conferencias internacionales como la CCP Annual Conference (Londres) y he recibido el Premio a Jóvenes Investigadores de LearLab (Roma) y el Premio Innova (URV). Acompaño a doctorandos e investigadores en sus tesis y artículos con mentorías 1:1 — y este curso condensa el método de revisión sistemática que uso con ellos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="accent-line"></div>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Para qué disciplinas funciona el método?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>Para cualquiera. El método PRISMA + PICO(T) es un estándar internacional, y en el curso verás ejemplos aplicados a salud, economía, educación, psicología y management. Las herramientas (PubMed, Scopus, Zotero) se adaptan a la base de datos de tu campo.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Necesito conocimientos previos o software de pago?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>No. El método es manual y transparente: no dependes de software estadístico ni de herramientas de pago. Solo necesitas acceso a las bases de datos de tu universidad, Zotero (gratuito) y una hoja de cálculo.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Cómo accedo al curso después del pago?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>El acceso es inmediato. Tras completar el pago te llega la invitación a la Escuela de Investigación en Skool, la plataforma donde vive el curso. Regístrate con el mismo email con el que pagas y tendrás todas las lecciones en la pestaña "Aula".</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Cuánto tiempo necesito para completarlo?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>El curso es a tu ritmo y el acceso no caduca. Las lecciones suman unas 3 horas de vídeo más los ejercicios; lo importante es que avanzas haciendo TU revisión en paralelo, así que el ritmo lo marca tu proyecto.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Hay devoluciones?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>No. Al tratarse de contenido digital con acceso inmediato a todo el material, todas las ventas son finales y no reembolsables.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">
+            ¿Incluye tutorías individuales?
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>El curso incluye la comunidad, donde puedes preguntar tus dudas. Si lo que buscas es acompañamiento individual en tu tesis o artículo, eso es mi <a href="/" style="color: var(--color-accent);">programa de mentoría 1:1</a> — el curso, de hecho, está incluido como bonus en el programa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section cta-banner section--dark" style="padding: 100px 0;">
+    <div class="container reveal">
+      <h2>Empieza hoy tu revisión sistemática</h2>
+      <p>Acceso inmediato a las 25 lecciones, las plantillas y la comunidad. En unas semanas puedes tener lo que llevas meses posponiendo: tu artículo en marcha.</p>
+      <p style="font-family: var(--font-main); font-weight: 900; font-size: 3rem; color: var(--color-primary); margin: 24px auto 4px; text-align: center;">697€</p>
+      <p style="font-size: 0.95rem; color: #888; margin-bottom: 24px; text-align: center;">Pago único · Sin suscripciones</p>
+      <div style="margin-top: 12px;">
+        <a href="https://buy.stripe.com/8x2dR9eFz8hc2xocMHeIw0i" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 44px;" target="_blank" rel="noopener">Acceder al curso ahora</a>
+      </div>
+      <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">Pago seguro con Stripe · Acceso inmediato en Skool</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="navbar__logo">Alejandro <span>Medina</span></a>
+          <p>Mentoría académica para doctorandos e investigadores que quieren publicar con confianza y finalizar su tesis doctoral.</p>
+        </div>
+        <div>
+          <h4 class="footer__title">Páginas</h4>
+          <ul class="footer__links">
+            <li><a href="/inicio/">Inicio</a></li>
+            <li><a href="/carrera/">Carrera Académica</a></li>
+            <li><a href="/asesorias/">Asesorías</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Recursos</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.youtube.com/@AlejandroMedinaSandin" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://open.spotify.com/show/5YqOn9lc8uZlzQnvcQ5LbN?si=63048fa43a854aa9" target="_blank" rel="noopener">Podcast</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Sígueme</h4>
+          <div class="footer__social">
+            <a href="https://www.youtube.com/@AlejandroMedinaSandin" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+            <a href="https://open.spotify.com/show/5YqOn9lc8uZlzQnvcQ5LbN?si=63048fa43a854aa9" aria-label="Spotify"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.5 17.3c-.2.3-.6.4-1 .2-2.7-1.6-6-2-10-1.1-.4.1-.8-.1-.9-.5-.1-.4.1-.8.5-.9 4.3-1 8.1-.6 11.1 1.2.4.3.5.7.3 1.1zm1.5-3.3c-.3.4-.8.5-1.2.3-3-1.9-7.7-2.4-11.3-1.3-.5.1-1-.1-1.1-.6-.1-.5.1-1 .6-1.1 4.1-1.3 9.2-.7 12.7 1.5.4.2.5.8.3 1.2zm.1-3.4c-3.7-2.2-9.7-2.4-13.2-1.3-.5.2-1.1-.1-1.3-.6-.2-.5.1-1.1.6-1.3 4-1.2 10.7-1 14.9 1.5.5.3.6.9.4 1.4-.3.5-.9.6-1.4.3z"/></svg></a>
+            <a href="https://www.linkedin.com/in/alejandro-medina-sandin/" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.9-3-1.8 0-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-.9-.8-1.7-1.8-1.7z"/></svg></a>
+            <a href="https://www.instagram.com/alejandromedinasandin" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Alejandro Medina Sandín. Todos los derechos reservados. | <a href="/legal/">Aviso Legal</a> | <a href="/privacidad/">Política de Privacidad</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

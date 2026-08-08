@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
   <link rel="stylesheet" href="/css/mailerlite.css">
 </head>
 <body>
@@ -30,12 +30,16 @@
       <a href="/" class="navbar__logo">Alejandro <span>Medina</span></a>
       <ul class="navbar__menu">
         <li><a href="/inicio/" class="navbar__link active">Inicio</a></li>
-        <li><a href="/" class="navbar__link">Programa</a></li>
         <li><a href="/carrera/" class="navbar__link">Carrera Académica</a></li>
-        <li><a href="/asesorias/" class="navbar__link">Asesorías</a></li>
-        <li><a href="/formacion/" class="navbar__link">Formación en IA</a></li>
+        <li class="navbar__dropdown">
+          <a class="navbar__link" aria-haspopup="true">Asesoramiento<span class="navbar__dropdown-chevron">▼</span></a>
+          <ul class="navbar__dropdown-menu">
+            <li><a href="/">Programa Tesis 1:1</a></li>
+            <li><a href="/asesorias/">Asesoría Individual</a></li>
+            <li><a href="/curso-revision-sistematica/">Curso Revisión Sistemática</a></li>
+          </ul>
+        </li>
         <li><a href="/contacto/" class="navbar__link">Contacto</a></li>
-        <li><a href="https://tidycal.com/alejandromedina/habla-conmigo" class="btn btn-primary navbar__cta" target="_blank" rel="noopener">Agendar Llamada</a></li>
       </ul>
       <button class="navbar__hamburger" aria-label="Abrir menú">
         <span></span>
@@ -49,12 +53,11 @@
   <div class="mobile-overlay">
     <button class="mobile-overlay__close" aria-label="Cerrar menú">&times;</button>
     <a href="/inicio/">Inicio</a>
-    <a href="/">Programa</a>
     <a href="/carrera/">Carrera Académica</a>
-    <a href="/asesorias/">Asesorías</a>
-    <a href="/formacion/">Formación en IA</a>
+    <a href="/">Programa Tesis 1:1</a>
+    <a href="/asesorias/">Asesoría Individual</a>
+    <a href="/curso-revision-sistematica/">Curso Revisión Sistemática</a>
     <a href="/contacto/">Contacto</a>
-    <a href="https://tidycal.com/alejandromedina/habla-conmigo" class="btn btn-primary" target="_blank" rel="noopener">Agendar Llamada</a>
   </div>
 
   <!-- ===== HERO ===== -->
