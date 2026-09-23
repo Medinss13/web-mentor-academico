@@ -2152,3 +2152,75 @@ html {
     transform: none;
   }
 }
+
+/* --- Bloque "Esto no es un curso" (landing, 2026-09-23) --- */
+.vs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.vs-card {
+  border-radius: 16px;
+  padding: 36px 32px;
+}
+
+.vs-card__label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.vs-card--no {
+  background: var(--color-white);
+  border: 1px solid #e2e2dc;
+}
+
+.vs-card--no .vs-card__label { color: var(--color-gray); }
+
+.vs-card--yes {
+  background: var(--color-black);
+  border: 1px solid rgba(255, 165, 0, 0.5);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18), 0 0 30px rgba(255, 165, 0, 0.08);
+}
+
+.vs-card--yes .vs-card__label { color: var(--color-primary); }
+
+.vs-card ul {
+  display: grid;
+  gap: 14px;
+}
+
+.vs-card li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.vs-card--no li { color: var(--color-gray); }
+.vs-card--yes li { color: #e8e8e8; }
+
+.vs-mark { flex-shrink: 0; font-weight: 900; }
+.vs-card--no .vs-mark { color: #b9b9b2; }
+.vs-card--yes .vs-mark { color: var(--color-primary); }
+
+.vs-closing {
+  text-align: center;
+  max-width: 640px;
+  margin: 40px auto 0;
+  font-size: 1.1rem;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .vs-grid { grid-template-columns: 1fr; }
+}
