@@ -211,3 +211,19 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateProgress);
   updateProgress();
 })();
+
+// --- Testimonios (2026-09-29): la miniatura sustituye al iframe de YouTube;
+// --- el reproductor solo se carga cuando el visitante pulsa play.
+document.addEventListener('click', function (e) {
+  var btn = e.target && e.target.closest ? e.target.closest('.yt-lite') : null;
+  if (!btn) return;
+  var id = btn.getAttribute('data-yt');
+  if (!id) return;
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+  iframe.title = btn.getAttribute('aria-label') || 'Vídeo de testimonio';
+  iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+  btn.replaceWith(iframe);
+});

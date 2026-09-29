@@ -2224,3 +2224,60 @@ html {
 @media (max-width: 768px) {
   .vs-grid { grid-template-columns: 1fr; }
 }
+
+/* --- Testimonios: miniatura ligera de YouTube (el reproductor carga al clicar) --- */
+.testimonial-video-card__video .yt-lite {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: #111;
+  overflow: hidden;
+}
+
+.yt-lite img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.92;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.yt-lite:hover img {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+.yt-lite__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.yt-lite__play::after {
+  content: '';
+  border-style: solid;
+  border-width: 11px 0 11px 19px;
+  border-color: transparent transparent transparent var(--color-black);
+  margin-left: 4px;
+}
+
+.yt-lite:hover .yt-lite__play {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: var(--color-accent);
+}
